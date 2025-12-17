@@ -41,7 +41,7 @@ if not TESTING:
 # Calculate using the input values (NOT hardcoded!)
 subtotal = price * quantity
 tax_rate = 0.095 #This is slightly different from the review. The tax multiplier is stored into a variable.
-tax = subtotal * 0.095
+tax = subtotal * tax_rate
 total = subtotal + tax
 total = round(total, 2)
 
